@@ -7,18 +7,69 @@ import FullButton from "../Buttons/FullButton";
 import TestimonialSlider from "../Elements/TestimonialSlider";
 
 export default function Blog() {
-  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+  const [selectedCurrency, setSelectedCurrency] = useState('USD');
 
-  const handleCurrencyChange = (currency) => {
-    setSelectedCurrency(currency);
+  const handleCurrencyChange = (value) => {
+    setSelectedCurrency(value);
   };
 
-  const convertCurrency = (price) => {
-    // You can implement the currency conversion logic here
-    // For simplicity, let's assume a direct conversion rate for illustration
-    const conversionRate = 1.2; // 1 USD to 1.2 GBP
-    return (price * conversionRate).toFixed(2);
+  const getPricing = () => {
+    switch (selectedCurrency) {
+      case 'USD':
+        return {
+          starter: 30,
+          basic: 20,
+          golden: 25,
+          premium: 35,
+          special: 2000,
+        };
+      case 'USA':
+        return {
+          starter: 45,
+          basic: 45,
+          golden: 45,
+          premium: 45,
+          special: 45,
+        };
+      case 'CDA':
+        return {
+          starter: 78,
+          basic: 78,
+          golden: 78,
+          premium: 78,
+          special: 78,
+        };
+      case 'AU':
+        return {
+          starter: 30,
+          basic: 15,
+          golden: 25,
+          premium: 30,
+          special: 1500,
+        };
+      case 'IND':
+        return {
+          starter: 99,
+          basic: 99,
+          golden: 99,
+          premium: 99,
+          special: 99,
+        };
+      default:
+        return {
+          starter: 88,
+          basic: 88,
+          golden: 88,
+          premium: 88,
+          special: 88,
+        };
+    }
   };
+
+  const getFormattedPrice = (price) => {
+    return `${price} ${selectedCurrency}`;
+  };
+  const prices = getPricing();
 
 
   return (
@@ -37,36 +88,38 @@ export default function Blog() {
               <BlogBox
                 title="Starter"
                 text="Get started with our introductory plan designed for those who want a taste of our exceptional online Quran teaching services."
-                tag={`${convertCurrency(20)} ${selectedCurrency}`}
+                
+                tag={getFormattedPrice(prices.starter)}
                 author="2 days of dedicated lessons for an entire month."
                 action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="Basic"
-                text="Take a step further with our Basic plan offering extended learning opportunities and more personalized sessions."
-                tag="$25"
-                author="3 days of immersive Quran learning for an entire month."
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <BlogBox
-                title="Golden"
-                text="Shine bright with our Golden plan, offering an extended period of learning and enhanced features for an enriched experience."
-                tag="$30"
-                author="4 days of comprehensive Quranic education for an entire month."
-                action={() => alert("clicked")}
-              />
-            </div>
+          <BlogBox
+          title="Basic"
+          text="Take a step further with our Basic plan offering extended learning opportunities and more personalized sessions."
+          tag={getFormattedPrice(prices.basic)}
+          author="3 days of immersive Quran learning for an entire month."
+          action={() => alert("clicked")}
+        />
+      </div>
+
+      <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <BlogBox
+          title="Golden"
+          text="Shine bright with our Golden plan, offering an extended period of learning and enhanced features for an enriched experience."
+          tag={getFormattedPrice(prices.golden)}
+          author="4 days of comprehensive Quranic education for an entire month."
+          action={() => alert("clicked")}
+        />
+         </div>
           </div>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-6 col-lg-6 mx-auto">
               <BlogBox
                 title="Premium"
                 text="Elevate your learning journey with our Premium plan, providing a more in-depth and tailored curriculum for accelerated progress."
-                tag="$40"
+                tag={getFormattedPrice(prices.premium)}
                 author="5 days of personalized teaching for an entire month."
                 action={() => alert("clicked")}
               />
@@ -75,7 +128,7 @@ export default function Blog() {
               <BlogBox
                 title="Special"
                 text="Elevate your learning journey with our Special plan, tailored for those seeking consistent and advanced learning opportunities."
-                tag="$35"
+                tag={getFormattedPrice(prices.special)}
                 author="Saturdays and Sundays for an entire month."
                 action={() => alert("clicked")}
               />
@@ -88,7 +141,8 @@ export default function Blog() {
              <option value="USA">Fee In Dollars USA</option>
             <option value="CDA">Fee In Dollars CANADA</option>
             <option value="AU">Fee In Dollars Australia</option>
-          {/* Add more currency options as needed */}
+            <option value="IND">Fee In India Rupee</option>
+          
         </CurrencySpinner>
             </div>
           </div>
