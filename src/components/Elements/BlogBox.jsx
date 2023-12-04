@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   margin-top: 30px;
 `;
 const WrapperBtn = styled.button`
-  border: 0px;
+  border: 2px;
   outline: none;
   background-color: transparent;
   :hover {
