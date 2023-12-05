@@ -79,10 +79,7 @@ export default function Blog() {
     <LightBgSection>
     <div  >
         <div className="container">
-          <HeaderInfo>
             <h1 className="font40 extraBold">Our Pricing</h1>
-            
-          </HeaderInfo>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
               <BlogBox
@@ -149,7 +146,7 @@ export default function Blog() {
         </div>
       </div>
     </LightBgSection>
-      <div className="lightBg" style={{padding: '50px 0'}}>
+      {/* <div className="lightBg" style={{padding: '50px 0'}}>
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">What They Say?</h1>
@@ -161,7 +158,7 @@ export default function Blog() {
           </HeaderInfo>
           <TestimonialSlider />
         </div>
-      </div>
+      </div> */}
       
     
     </Wrapper>
@@ -189,6 +186,6 @@ const HeaderInfo = styled.div`
   }
 `;
 const LightBgSection = styled.div`
-  background-color: #81EE96;
+  background-color: #F5F5F5;
   padding: 50px 0;
 `;
