@@ -17,51 +17,51 @@ export default function Blog() {
     switch (selectedCurrency) {
       case 'USD':
         return {
-          starter: 30,
+          starter: 15,
           basic: 20,
           golden: 25,
-          premium: 35,
-          special: 2000,
+          premium: 30,
+          special: 30,
         };
       case 'USA':
         return {
-          starter: 45,
-          basic: 45,
-          golden: 45,
-          premium: 45,
-          special: 45,
+          starter: 20,
+          basic: 25,
+          golden: 30,
+          premium: 40,
+          special: 35,
         };
       case 'CDA':
         return {
-          starter: 78,
-          basic: 78,
-          golden: 78,
-          premium: 78,
-          special: 78,
+          starter: 30,
+          basic: 35,
+          golden: 40,
+          premium: 50,
+          special: 45,
         };
       case 'AU':
         return {
           starter: 30,
-          basic: 15,
-          golden: 25,
-          premium: 30,
-          special: 1500,
+          basic: 40,
+          golden: 50,
+          premium: 60,
+          special: 55,
         };
       case 'IND':
         return {
-          starter: 99,
-          basic: 99,
-          golden: 99,
-          premium: 99,
-          special: 99,
+          starter: 1500,
+          basic: 2000,
+          golden: 2500,
+          premium: 3000,
+          special: 2500,
         };
       default:
         return {
-          starter: 88,
-          basic: 88,
-          golden: 88,
-          premium: 88,
-          special: 88,
+          starter: 20,
+          basic: 25,
+          golden: 30,
+          premium: 40,
+          special: 35,
         };
     }
   };
