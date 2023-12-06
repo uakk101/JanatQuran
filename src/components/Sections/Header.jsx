@@ -14,8 +14,9 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">Learn Quran From Us.</h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Embark on a transformative journey of spiritual enlightenment with our personalized one-on-one Quran coaching services. Our
+           dedicated team is committed to guiding you through the profound teachings of the Quran, with a special focus on Tajweed 
+           the art of recitation
           </HeaderP>
           <BtnWrapper>
             <FullButton title="Get Started" />

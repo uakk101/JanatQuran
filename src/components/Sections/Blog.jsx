@@ -1,10 +1,9 @@
 import {useState} from "react";
 import styled from "styled-components";
-
 // Components
 import BlogBox from "../Elements/BlogBox";
-import FullButton from "../Buttons/FullButton";
-import TestimonialSlider from "../Elements/TestimonialSlider";
+import CustomSelect from "../Buttons/CustomSelect";
+ 
 
 export default function Blog() {
   const [selectedCurrency, setSelectedCurrency] = useState('USD');
@@ -79,7 +78,31 @@ export default function Blog() {
     <LightBgSection>
     <div  >
         <div className="container">
-            <h1 className="font40 extraBold">Our Pricing</h1>
+            {/* <h1 className="font40 extraBold">Our Pricing</h1>
+            <div style={{ margin: "50px 0", width: "200px" }}>
+            <CurrencySpinner onChange={(e) => handleCurrencyChange(e.target.value)} value={selectedCurrency}>
+            <option value="USD">Fee In Pounds UK</option>
+             <option value="USA">Fee In Dollars USA</option>
+            <option value="CDA">Fee In Dollars CANADA</option>
+            <option value="AU">Fee In Dollars Australia</option>
+            <option value="IND">Fee In India Rupee</option>
+            </CurrencySpinner>
+            </div> */}
+
+             
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+              <h1 className="font40 extraBold">Our Pricing</h1>
+             
+                <CurrencySpinner onChange={(e) => handleCurrencyChange(e.target.value)} value={selectedCurrency}>
+                  <option value="USD">Fee In Pounds UK</option>
+                  <option value="USA">Fee In Dollars USA</option>
+                  <option value="CDA">Fee In Dollars CANADA</option>
+                  <option value="AU">Fee In Dollars Australia</option>
+                  <option value="IND">Fee In India Rupee</option>
+                </CurrencySpinner>
+              
+            </div>
+          
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
               <BlogBox
@@ -131,18 +154,7 @@ export default function Blog() {
               />
             </div>
           </div>
-          <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
-            <CurrencySpinner onChange={(e) => handleCurrencyChange(e.target.value)} value={selectedCurrency}>
-            <option value="USD">Fee In Pounds UK</option>
-             <option value="USA">Fee In Dollars USA</option>
-            <option value="CDA">Fee In Dollars CANADA</option>
-            <option value="AU">Fee In Dollars Australia</option>
-            <option value="IND">Fee In India Rupee</option>
-          
-        </CurrencySpinner>
-            </div>
-          </div>
+        
         </div>
       </div>
     </LightBgSection>
@@ -167,7 +179,6 @@ export default function Blog() {
 }
 
 const CurrencySpinner = styled.select`
-  
   padding: 10px;
   font-size: 16px;
   border-radius: 8px;

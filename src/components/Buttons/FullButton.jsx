@@ -15,18 +15,18 @@ export default function FullButton({ title, action, border }) {
 
 const Wrapper = styled.button`
   border: 1px solid ${(props) => (props.border ? "#707070" : "#2AAF2D")};
-  background-color: ${(props) => (props.border ? "transparent" : "#B8860B")};
+  background-color: ${(props) => (props.border ? "transparent" : "#704728")};
   width: 100%;
   padding: 15px;
   outline: none;
   color: ${(props) => (props.border ? "#707070" : "#fff")};
   :hover {
-    background-color: ${(props) => (props.border ? "transparent" : "#FFD700")};
-    border: 1px solid #B8860B;
-    color: ${(props) => (props.border ? "#B8860B" : "#fff")};
+    background-color: ${(props) => (props.border ? "transparent" : "#965321")};
+    border: 1px solid #704728;
+    color: ${(props) => (props.border ? "#704728" : "#fff")};
   }
 `;
-// In this code, the default background color is `#7620ff`, and the hover background color has been set to `#B8860B`. The text color has also been adjusted accordingly. Please give this a try, and let me know if it meets your expectations.
+ 
 
 
 
