@@ -15,8 +15,8 @@ export default function Header() {
           <h1 className="extraBold font60">Learn Quran From Us.</h1>
           <HeaderP className="font13 semiBold">
             Embark on a transformative journey of spiritual enlightenment with our personalized one-on-one Quran coaching services. Our
-           dedicated team is committed to guiding you through the profound teachings of the Quran, with a special focus on Tajweed 
-           the art of recitation
+            dedicated team is committed to guiding you through the profound teachings of the Quran, with a special focus on Tajweed
+            the art of recitation
           </HeaderP>
           <BtnWrapper>
             <FullButton title="Get Started" />
@@ -25,16 +25,16 @@ export default function Header() {
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
+          <Img className="radius8" src={HeaderImage} alt="office" style={{ zIndex: 9 }} />
           <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
+                <em>Indeed these Hearts are vessels, so fill them with the Quran and nothing else</em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
+              <p className="font13 orangeColor textRight" style={{ marginTop: '10px' }}>Ibn Masoud</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>

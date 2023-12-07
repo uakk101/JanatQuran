@@ -21,11 +21,12 @@ export default function Services() {
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
-            <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            <h1 className="font40 extraBold">Education Services</h1>
+            <p className="font13 fs-1">
+              Welcome to a realm of personalized learning experiences at Janat Quran Academy. Our commitment <br />
+              goes beyond traditional education, as we proudly present our diverse and dynamic
+              coaching services <br />designed to meet the unique needs of every learner.
+
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
@@ -33,25 +34,33 @@ export default function Services() {
               <ServiceBox
                 icon="roller"
                 title="One to One Classes"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                subtitle="Experience the pinnacle of personalized learning with our one-to-one classes.
+                 Tailored to the specific goals and learning style of each individual, our expert educators
+                  provide undivided attention to unlock your full potential."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
                 title="Group Classes"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                subtitle="Join the collaborative spirit of our group classes, where shared knowledge and interactive learning 
+                          foster a vibrant community of achievers. Engage in lively discussions, 
+                          collaborative projects, and peer-to-peer support, amplifying the learning experience."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
                 title="Coaching"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                subtitle="At Janat Quran Academy, we believe that education is not one-size-fits-all. Our diverse range of 
+                coaching classes ensures that every student can find the perfect path to success. Join us on 
+                this exciting educational adventure, where excellence meets individuality. "
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="roller" title="Classes" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox icon="roller" title="Classes" subtitle="Unleash your potential with our specialized classes, designed to cater to unique interests and 
+                      learning objectives. Whether it's honing specific skills, exploring advanced topics, or preparing for specialized exams, our expert 
+                      instructors are here to guide you on a journey of expertise and excellence." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -60,12 +69,13 @@ export default function Services() {
             <Advertising className="flexSpaceCenter">
               <AddLeft>
                 <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h2 className="font40 extraBold">Unlocking Potential through Education</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  Our commitment is to provide a dynamic and engaging learning environment that goes beyond traditional boundaries.
+                  We strive to cultivate a community of learners who are not only well-versed in their subjects
+                  but are also empowered with creativity and critical thinking.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
                   <div style={{ width: "190px" }}>
                     <FullButton title="Get Started" action={() => alert("clicked")} />
                   </div>

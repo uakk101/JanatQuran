@@ -28,9 +28,9 @@ export default function TopNavbar() {
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            <LogoIcon style={{ width: "100px", height: "100px", marginTop : "20px"}}/>
+            <LogoIcon style={{ width: "100px", height: "100px", marginTop: "20px" }} />
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              Online  Janat Quran 
+              Online  Janat Quran
             </h1>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
@@ -54,14 +54,14 @@ export default function TopNavbar() {
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
-                Blog
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
                 Pricing
               </Link>
             </li>
+            {/* <li className="semiBold font15 pointer">
+              <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
+                Pricing
+              </Link>
+            </li> */}
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
                 Contact
@@ -69,7 +69,7 @@ export default function TopNavbar() {
             </li>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <a href="/" style={{ padding: "10px 30px 10px 0" }}>
                 Log in
               </a>
@@ -78,7 +78,7 @@ export default function TopNavbar() {
               <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
                 Get Started
               </a>
-            </li>
+            </li> */}
           </UlWrapperRight>
         </NavInner>
       </Wrapper>
@@ -108,7 +108,7 @@ const BurderWrapper = styled.button`
     display: block;
   }
 `;
- 
+
 
 const UlWrapper = styled.ul`
   display: flex;

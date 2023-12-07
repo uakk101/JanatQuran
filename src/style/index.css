@@ -273,13 +273,12 @@
   }
 
 
-
   select {
     margin: 0 auto;
     color: #EC6F66;
     width: 310px;
     padding: 15px;
-    height: 25px;
+    height: 40px;
     cursor: pointer;
     background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px no-repeat white;
   }
@@ -297,6 +296,7 @@
     padding: 10px 15px;
     height: 20px;
     cursor: pointer;
+    font-weight: lighter; /* Add this line to decrease font weight */
   }
   
   select option:hover {
@@ -304,3 +304,4 @@
     width: 270px;
     color: #EC6F66;
   }
+  
