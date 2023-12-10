@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import styled from "styled-components";
 // Components
 import TestimonialBox from "../Elements/TestimonialBox";
@@ -30,44 +30,44 @@ export default function TestimonialSlider() {
   };
   return (
     <div>
-      <Slider {...settings}>
-        <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
-            author="Ralph Waldo Emerson"
-          />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
-            author="Ralph Waldo Emerson"
-          />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
-            author="Ralph Waldo Emerson"
-          />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
-            author="Ralph Waldo Emerson"
-          />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
-            author="Ralph Waldo Emerson"
-          />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <TestimonialBox
-            text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
-            author="Ralph Waldo Emerson"
-          />
-        </LogoWrapper>
-      </Slider>
+      {/* <Slider {...settings}> */}
+      <LogoWrapper className="flexCenter">
+        <TestimonialBox
+          text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
+          author="Ralph Waldo Emerson"
+        />
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        <TestimonialBox
+          text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
+          author="Ralph Waldo Emerson"
+        />
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        <TestimonialBox
+          text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
+          author="Ralph Waldo Emerson"
+        />
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        <TestimonialBox
+          text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
+          author="Ralph Waldo Emerson"
+        />
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        <TestimonialBox
+          text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
+          author="Ralph Waldo Emerson"
+        />
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        <TestimonialBox
+          text="Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it."
+          author="Ralph Waldo Emerson"
+        />
+      </LogoWrapper>
+      {/* </Slider> */}
     </div>
   );
 }

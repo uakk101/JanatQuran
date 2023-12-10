@@ -128,18 +128,7 @@ export default function Courses() {
                 <div style={{ width: "190px" }}>
                   <FullButton
                     title="Get Started"
-                    action={() => {
-                      <Link
-                        activeClass="active"
-                        style={{ padding: "10px 15px" }}
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-80}
-                      >
-                        Contact
-                      </Link>;
-                    }}
+                    // action={() => {
                   />
                 </div>
                 <div style={{ width: "190px", marginLeft: "15px" }}>

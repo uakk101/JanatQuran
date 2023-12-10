@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import styled from "styled-components";
 // Assets
 import ClientLogo01 from "../../assets/img/clients/logo01.svg";
@@ -41,39 +41,37 @@ export default function ClientSlider() {
     ],
   };
   return (
-    <div>
-      <Slider {...settings}>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo01} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo02} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo03} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo04} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo05} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo06} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo03} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo04} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo01} alt="client logo" /> */}
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          {/* <ImgStyle src={ClientLogo02} alt="client logo" /> */}
-        </LogoWrapper>
-      </Slider>
+    <div style={{ width: "100px" }}>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo01} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo02} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo03} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo04} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo05} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo06} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo03} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo04} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo01} alt="client logo" /> */}
+      </LogoWrapper>
+      <LogoWrapper className="flexCenter">
+        {/* <ImgStyle src={ClientLogo02} alt="client logo" /> */}
+      </LogoWrapper>
     </div>
   );
 }
