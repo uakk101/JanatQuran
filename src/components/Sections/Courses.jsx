@@ -76,8 +76,8 @@ export default function Courses() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg6}
-                title="Course Name"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                title="Serat Nabavi"
+                text="Coming Soon ... "
                 // action={() => alert("clicked")}
               />
             </div>
