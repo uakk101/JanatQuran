@@ -1,12 +1,11 @@
-import {useState} from "react";
+import { useState } from "react";
 import styled from "styled-components";
 // Components
 import BlogBox from "../Elements/BlogBox";
 import CustomSelect from "../Buttons/CustomSelect";
- 
 
 export default function Blog() {
-  const [selectedCurrency, setSelectedCurrency] = useState('USD');
+  const [selectedCurrency, setSelectedCurrency] = useState("$");
 
   const handleCurrencyChange = (value) => {
     setSelectedCurrency(value);
@@ -14,7 +13,7 @@ export default function Blog() {
 
   const getPricing = () => {
     switch (selectedCurrency) {
-      case 'USD':
+      case "£":
         return {
           starter: 15,
           basic: 20,
@@ -22,7 +21,7 @@ export default function Blog() {
           premium: 30,
           special: 30,
         };
-      case 'USA':
+      case "$":
         return {
           starter: 20,
           basic: 25,
@@ -30,7 +29,7 @@ export default function Blog() {
           premium: 40,
           special: 35,
         };
-      case 'CDA':
+      case "C$":
         return {
           starter: 30,
           basic: 35,
@@ -38,7 +37,7 @@ export default function Blog() {
           premium: 50,
           special: 45,
         };
-      case 'AU':
+      case "A$":
         return {
           starter: 30,
           basic: 40,
@@ -46,7 +45,7 @@ export default function Blog() {
           premium: 60,
           special: 55,
         };
-      case 'IND':
+      case "₹":
         return {
           starter: 1500,
           basic: 2000,
@@ -70,14 +69,11 @@ export default function Blog() {
   };
   const prices = getPricing();
 
-
   return (
-   
     <Wrapper id="blog">
-
-    <LightBgSection>
-    <div  >
-        <div className="container">
+      <LightBgSection>
+        <div>
+          <div className="container">
             {/* <h1 className="font40 extraBold">Our Pricing</h1>
             <div style={{ margin: "50px 0", width: "200px" }}>
             <CurrencySpinner onChange={(e) => handleCurrencyChange(e.target.value)} value={selectedCurrency}>
@@ -89,75 +85,82 @@ export default function Blog() {
             </CurrencySpinner>
             </div> */}
 
-             
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <h1 className="font40 extraBold">Our Pricing</h1>
-             
-                <CurrencySpinner onChange={(e) => handleCurrencyChange(e.target.value)} value={selectedCurrency}>
-                  <option value="USD">Fee In Pounds UK</option>
-                  <option value="USA">Fee In Dollars USA</option>
-                  <option value="CDA">Fee In Dollars CANADA</option>
-                  <option value="AU">Fee In Dollars Australia</option>
-                  <option value="IND">Fee In India Rupee</option>
-                </CurrencySpinner>
-              
-            </div>
-          
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
-              <BlogBox
-                title="Starter"
-                text="Get started with our introductory plan designed for those who want a taste of our exceptional online Quran teaching services."
-                
-                tag={getFormattedPrice(prices.starter)}
-                author="2 days of dedicated lessons for an entire month."
-                action={() => alert("clicked")}
-              />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <BlogBox
-          title="Basic"
-          text="Take a step further with our Basic plan offering extended learning opportunities and more personalized sessions."
-          tag={getFormattedPrice(prices.basic)}
-          author="3 days of immersive Quran learning for an entire month."
-          action={() => alert("clicked")}
-        />
-      </div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <div style={{ display: "block" }}>
+                <h1 className="font40 extraBold">Packages</h1>
+              </div>
 
-      <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <BlogBox
-          title="Golden"
-          text="Shine bright with our Golden plan, offering an extended period of learning and enhanced features for an enriched experience."
-          tag={getFormattedPrice(prices.golden)}
-          author="4 days of comprehensive Quranic education for an entire month."
-          action={() => alert("clicked")}
-        />
-         </div>
-          </div>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-6 col-lg-6 mx-auto">
-              <BlogBox
-                title="Premium"
-                text="Elevate your learning journey with our Premium plan, providing a more in-depth and tailored curriculum for accelerated progress."
-                tag={getFormattedPrice(prices.premium)}
-                author="5 days of personalized teaching for an entire month."
-                action={() => alert("clicked")}
-              />
+              <CurrencySpinner
+                onChange={(e) => handleCurrencyChange(e.target.value)}
+                value={selectedCurrency}
+              >
+                <option value="£">Fee In Pounds</option>
+                <option value="$">Fee In American Dollars</option>
+                <option value="C$">Fee In Canadian Dollars</option>
+                <option value="A$">Fee In Australian Dollars</option>
+                <option value="₹">Fee In Indian Rupee</option>
+              </CurrencySpinner>
             </div>
-            <div className="col-xs-12 col-sm-4 col-md-6 col-lg-6 mx-auto">
-              <BlogBox
-                title="Special"
-                text="Elevate your learning journey with our Special plan, tailored for those seeking consistent and advanced learning opportunities."
-                tag={getFormattedPrice(prices.special)}
-                author="Saturdays and Sundays for an entire month."
-                action={() => alert("clicked")}
-              />
+
+            <div className="row textCenter">
+              <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+                <BlogBox
+                  title="Starter"
+                  text="Get started with our introductory plan designed for those who want a taste of our exceptional online Quran teaching services."
+                  tag={getFormattedPrice(prices.starter)}
+                  author="2 days of dedicated lessons for an entire month."
+                  action={() => alert("clicked")}
+                />
+              </div>
+              <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <BlogBox
+                  title="Basic"
+                  text="Take a step further with our Basic plan offering extended learning opportunities and more personalized sessions."
+                  tag={getFormattedPrice(prices.basic)}
+                  author="3 days of immersive Quran learning for an entire month."
+                  // action={() => alert("clicked")}
+                />
+              </div>
+
+              <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <BlogBox
+                  title="Golden"
+                  text="Shine bright with our Golden plan, offering an extended period of learning and enhanced features for an enriched experience."
+                  tag={getFormattedPrice(prices.golden)}
+                  author="4 days of comprehensive Quranic education for an entire month."
+                  // action={() => alert("clicked")}
+                />
+              </div>
+            </div>
+            <div className="row textCenter">
+              <div className="col-xs-12 col-sm-4 col-md-6 col-lg-6 mx-auto">
+                <BlogBox
+                  title="Premium"
+                  text="Elevate your learning journey with our Premium plan, providing a more in-depth and tailored curriculum for accelerated progress."
+                  tag={getFormattedPrice(prices.premium)}
+                  author="5 days of personalized teaching for an entire month."
+                  // action={() => alert("clicked")}
+                />
+              </div>
+              <div className="col-xs-12 col-sm-4 col-md-6 col-lg-6 mx-auto">
+                <BlogBox
+                  title="Special"
+                  text="Elevate your learning journey with our Special plan, tailored for those seeking consistent and advanced learning opportunities."
+                  tag={getFormattedPrice(prices.special)}
+                  author="Saturdays and Sundays for an entire month."
+                  // action={() => alert("clicked")}
+                />
+              </div>
             </div>
           </div>
-        
         </div>
-      </div>
-    </LightBgSection>
+      </LightBgSection>
       {/* <div className="lightBg" style={{padding: '50px 0'}}>
         <div className="container">
           <HeaderInfo>
@@ -171,10 +174,7 @@ export default function Blog() {
           <TestimonialSlider />
         </div>
       </div> */}
-      
-    
     </Wrapper>
-     
   );
 }
 
@@ -182,8 +182,8 @@ const CurrencySpinner = styled.select`
   padding: 10px;
   font-size: 16px;
   border-radius: 8px;
-  border: 2px solid green;  
-  box-sizing: border-box; 
+  border: 2px solid #c6a682;
+  box-sizing: border-box;
 `;
 
 const Wrapper = styled.section`
@@ -197,6 +197,6 @@ const HeaderInfo = styled.div`
   }
 `;
 const LightBgSection = styled.div`
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 50px 0;
 `;

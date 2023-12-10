@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 export default function BlogBox({ tag, title, text, action, author }) {
   return (
-    <WrapperBtn className="animate pointer" onClick={action ? () => action() : null}>
+    <WrapperBtn
+      className="animate pointer"
+      onClick={action ? () => action() : null}
+    >
       <Wrapper className="whiteBg radius8 shadow">
         <h3 className="font20 extraBold">{title}</h3>
         <p className="font13" style={{ padding: "30px 0" }}>

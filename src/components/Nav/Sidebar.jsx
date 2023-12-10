@@ -15,7 +15,10 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             Janat
           </h1>
         </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+        <CloseBtn
+          onClick={() => toggleSidebar(!sidebarOpen)}
+          className="animate pointer"
+        >
           <CloseIcon />
         </CloseBtn>
       </SidebarHeader>
@@ -55,12 +58,12 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="projects"
+            to="courses"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Projects
+            Courses
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -108,12 +111,20 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       </UlStyle>
       <UlStyle className="flexSpaceCenter">
         <li className="semiBold font15 pointer">
-          <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
+          <a
+            href="/"
+            style={{ padding: "10px 30px 10px 0" }}
+            className="whiteColor"
+          >
             Log in
           </a>
         </li>
         <li className="semiBold font15 pointer flexCenter">
-          <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
+          <a
+            href="/"
+            className="radius8 lightBg"
+            style={{ padding: "10px 15px" }}
+          >
             Get Started
           </a>
         </li>

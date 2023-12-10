@@ -20,40 +20,75 @@ export default function TopNavbar() {
     };
   }, [y]);
 
-
   return (
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
+      <Wrapper
+        className="flexCenter animate whiteBg"
+        style={y > 100 ? { height: "60px" } : { height: "80px" }}
+      >
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            <LogoIcon style={{ width: "100px", height: "100px", marginTop: "20px" }} />
+            <LogoIcon
+              style={{ width: "100px", height: "100px", marginTop: "20px" }}
+            />
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              Online  Janat Quran
+              Online Janat Quran
             </h1>
           </Link>
-          <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
+          <BurderWrapper
+            className="pointer"
+            onClick={() => toggleSidebar(!sidebarOpen)}
+          >
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
                 Home
               </Link>
             </li>
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
                 Services
               </Link>
             </li>
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="projects" spy={true} smooth={true} offset={-80}>
-                Projects
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Courses
               </Link>
             </li>
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
                 Pricing
               </Link>
             </li>
@@ -63,7 +98,14 @@ export default function TopNavbar() {
               </Link>
             </li> */}
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
                 Contact
               </Link>
             </li>
@@ -96,7 +138,7 @@ const Wrapper = styled.nav`
 const NavInner = styled.div`
   position: relative;
   height: 100%;
-`
+`;
 const BurderWrapper = styled.button`
   outline: none;
   border: 0px;
@@ -109,7 +151,6 @@ const BurderWrapper = styled.button`
   }
 `;
 
-
 const UlWrapper = styled.ul`
   display: flex;
   @media (max-width: 760px) {
@@ -117,12 +158,8 @@ const UlWrapper = styled.ul`
   }
 `;
 
-
-
 const UlWrapperRight = styled.ul`
   @media (max-width: 760px) {
     display: none;
   }
 `;
-
-
