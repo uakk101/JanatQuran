@@ -1,16 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-
 import {
   faSkype,
-  faGithub,
-  faLinkedin,
+  faWhatsapp,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-
 import INFO from "../../data/user";
-
 import "./styles/socials.css";
 
 const Socials = () => {
@@ -37,9 +33,9 @@ const Socials = () => {
       <div className="social">
         <a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
           <div className="social-icon">
-            <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
+            <FontAwesomeIcon icon={faWhatsapp} className="social-icon" />
           </div>
-          <div className="social-text">Follow on LinkedIn</div>
+          <div className="social-text">Contact Us on WhatsApp</div>
         </a>
       </div>
 
