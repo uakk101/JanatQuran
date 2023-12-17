@@ -1,7 +1,6 @@
 import * as React from "react";
 
 function SvgComponent(props) {
-   
   return (
     // <svg xmlns="http://www.w3.org/2000/svg" width={27} height={40} viewBox="0 0 27 40" {...props}>
     //   <g data-name="Group 101" transform="translate(-375 -21)">
@@ -12,11 +11,11 @@ function SvgComponent(props) {
     //   </g>
     // </svg>
     <img
-        src="/logo.jpg" 
-        alt="Description of the image" 
-        height={40}
-        {...props}
-  />
+      src="/logo.png"
+      alt="Description of the image"
+      height={40}
+      {...props}
+    />
   );
 }
 
