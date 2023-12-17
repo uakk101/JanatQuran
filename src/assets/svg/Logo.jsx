@@ -10,12 +10,7 @@ function SvgComponent(props) {
     //     <rect data-name="Rectangle 12" width={8} height={8} rx={4} transform="translate(375 29)" fill="#4cd5c5" />
     //   </g>
     // </svg>
-    <img
-      src="/logo.png"
-      alt="Description of the image"
-      height={40}
-      {...props}
-    />
+    <img src="/logo.png" alt="Logo" height={40} {...props} />
   );
 }
 
