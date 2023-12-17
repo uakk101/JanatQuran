@@ -2,7 +2,6 @@ import { useState } from "react";
 import styled from "styled-components";
 // Components
 import BlogBox from "../Elements/BlogBox";
-import CustomSelect from "../Buttons/CustomSelect";
 
 export default function Blog() {
   const [selectedCurrency, setSelectedCurrency] = useState("$");

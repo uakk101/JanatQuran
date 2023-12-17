@@ -49,7 +49,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Services
+            About Us
+            {/* it was services before */}
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -58,7 +59,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="courses"
+            to="projects"
             spy={true}
             smooth={true}
             offset={-60}
@@ -77,10 +78,11 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Blog
+            Packages
+            {/* it was a blog section */}
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
+        {/* <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
@@ -93,7 +95,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           >
             Pricing
           </Link>
-        </li>
+        </li> */}
         <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
@@ -110,7 +112,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
       </UlStyle>
       <UlStyle className="flexSpaceCenter">
-        <li className="semiBold font15 pointer">
+        {/* <li className="semiBold font15 pointer">
           <a
             href="/"
             style={{ padding: "10px 30px 10px 0" }}
@@ -127,7 +129,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           >
             Get Started
           </a>
-        </li>
+        </li> */}
       </UlStyle>
     </Wrapper>
   );
